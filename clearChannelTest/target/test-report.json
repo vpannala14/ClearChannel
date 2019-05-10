@@ -1,0 +1,672 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 8,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4720947987,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I goto herokuapp login page",
+            "match": {
+              "location": "LoginCoverSteps.i_goto_herokuapp_website()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3861697365,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.InitDriver()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Verify login with Valid credentials",
+        "description": "",
+        "id": "verify-login-and-logout-functionality;verify-login-with-valid-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 164625485,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.DisposeDriver()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 501608596,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I enter tomsmith and SuperSecretPassword!",
+            "match": {
+              "arguments": [
+                {
+                  "val": "tomsmith",
+                  "offset": 8
+                },
+                {
+                  "val": "SuperSecretPassword!",
+                  "offset": 21
+                }
+              ],
+              "location": "LoginCoverSteps.i_enter_tomsmith_and_password(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 498401684,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I click on login button",
+            "match": {
+              "location": "LoginCoverSteps.i_click_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 148808861,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I should be able to navigate to secure area",
+            "match": {
+              "location": "LoginCoverSteps.i_should_see_secure_area()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 11,
+            "name": "@ValidLogin"
+          },
+          {
+            "line": 11,
+            "name": "@Smoke"
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2171709282,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I goto herokuapp login page",
+            "match": {
+              "location": "LoginCoverSteps.i_goto_herokuapp_website()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1671999162,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.InitDriver()"
+            }
+          }
+        ],
+        "line": 28,
+        "name": "Verify login with Invalid credentials",
+        "description": "",
+        "id": "verify-login-and-logout-functionality;verify-login-with-invalid-credentials;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 205524965,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.DisposeDriver()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 559723160,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I enter  and password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "",
+                  "offset": 8
+                },
+                {
+                  "val": "password",
+                  "offset": 13
+                }
+              ],
+              "location": "LoginCoverSteps.i_enter_tomsmith_and_password(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 581944104,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I click on login button",
+            "match": {
+              "location": "LoginCoverSteps.i_click_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 201570256,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I should see error message",
+            "match": {
+              "location": "LoginCoverSteps.i_should_see_errormessage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 19,
+            "name": "@Smoke"
+          },
+          {
+            "line": 19,
+            "name": "@InvalidLogin"
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2759787604,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I goto herokuapp login page",
+            "match": {
+              "location": "LoginCoverSteps.i_goto_herokuapp_website()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1917456039,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.InitDriver()"
+            }
+          }
+        ],
+        "line": 29,
+        "name": "Verify login with Invalid credentials",
+        "description": "",
+        "id": "verify-login-and-logout-functionality;verify-login-with-invalid-credentials;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 155571715,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.DisposeDriver()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 387577566,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I enter username and ",
+            "match": {
+              "arguments": [
+                {
+                  "val": "username",
+                  "offset": 8
+                },
+                {
+                  "val": "",
+                  "offset": 21
+                }
+              ],
+              "location": "LoginCoverSteps.i_enter_tomsmith_and_password(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 576620389,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I click on login button",
+            "match": {
+              "location": "LoginCoverSteps.i_click_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 90914080,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I should see error message",
+            "match": {
+              "location": "LoginCoverSteps.i_should_see_errormessage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 19,
+            "name": "@Smoke"
+          },
+          {
+            "line": 19,
+            "name": "@InvalidLogin"
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2068895503,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I goto herokuapp login page",
+            "match": {
+              "location": "LoginCoverSteps.i_goto_herokuapp_website()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1754231595,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.InitDriver()"
+            }
+          }
+        ],
+        "line": 30,
+        "name": "Verify login with Invalid credentials",
+        "description": "",
+        "id": "verify-login-and-logout-functionality;verify-login-with-invalid-credentials;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 199538841,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.DisposeDriver()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 567640209,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I enter user and pass",
+            "match": {
+              "arguments": [
+                {
+                  "val": "user",
+                  "offset": 8
+                },
+                {
+                  "val": "pass",
+                  "offset": 17
+                }
+              ],
+              "location": "LoginCoverSteps.i_enter_tomsmith_and_password(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 809882213,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I click on login button",
+            "match": {
+              "location": "LoginCoverSteps.i_click_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 148403813,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I should see error message",
+            "match": {
+              "location": "LoginCoverSteps.i_should_see_errormessage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 19,
+            "name": "@Smoke"
+          },
+          {
+            "line": 19,
+            "name": "@InvalidLogin"
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2405191525,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I goto herokuapp login page",
+            "match": {
+              "location": "LoginCoverSteps.i_goto_herokuapp_website()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1810432365,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.InitDriver()"
+            }
+          }
+        ],
+        "line": 31,
+        "name": "Verify login with Invalid credentials",
+        "description": "",
+        "id": "verify-login-and-logout-functionality;verify-login-with-invalid-credentials;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 160168936,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.DisposeDriver()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 393737334,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I enter £@$^$\u0026 and pwdddd",
+            "match": {
+              "arguments": [
+                {
+                  "val": "£@$^$\u0026",
+                  "offset": 8
+                },
+                {
+                  "val": "pwdddd",
+                  "offset": 19
+                }
+              ],
+              "location": "LoginCoverSteps.i_enter_tomsmith_and_password(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 528575455,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I click on login button",
+            "match": {
+              "location": "LoginCoverSteps.i_click_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 119327624,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I should see error message",
+            "match": {
+              "location": "LoginCoverSteps.i_should_see_errormessage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 19,
+            "name": "@Smoke"
+          },
+          {
+            "line": 19,
+            "name": "@InvalidLogin"
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2044879120,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I goto herokuapp login page",
+            "match": {
+              "location": "LoginCoverSteps.i_goto_herokuapp_website()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1622614711,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.InitDriver()"
+            }
+          }
+        ],
+        "line": 35,
+        "name": "Verify Logout",
+        "description": "",
+        "id": "verify-login-and-logout-functionality;verify-logout",
+        "after": [
+          {
+            "result": {
+              "duration": 198521076,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.DisposeDriver()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1804352873,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "I am logged in",
+            "match": {
+              "location": "LoginCoverSteps.i_am_logged_in()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 497004597,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "I click the logout button",
+            "match": {
+              "location": "LoginCoverSteps.i_click_on_logout_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 96152130,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "I should successfully logout",
+            "match": {
+              "location": "LoginCoverSteps.i_should_successfully_logout()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 34,
+            "name": "@Logout"
+          },
+          {
+            "line": 34,
+            "name": "@Smoke"
+          }
+        ]
+      }
+    ],
+    "name": "Verify Login and Logout functionality",
+    "description": "\nIn order to verify login/logout\nAs a user\nI want to enter details for username and password and see",
+    "id": "verify-login-and-logout-functionality",
+    "keyword": "Feature",
+    "uri": "Login.feature"
+  }
+]

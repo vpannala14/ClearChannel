@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="6" time="38.406038">
+<testcase classname="Verify Login and Logout functionality" name="Verify login with Valid credentials" time="9.89609">
+<system-out><![CDATA[Given I goto herokuapp login page...........................................passed
+When I enter tomsmith and SuperSecretPassword!..............................passed
+And I click on login button.................................................passed
+Then I should be able to navigate to secure area............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verify Login and Logout functionality" name="Verify login with Invalid credentials" time="5.392471">
+<system-out><![CDATA[Given I goto herokuapp login page...........................................passed
+When I enter  and password..................................................passed
+And I click on login button.................................................passed
+Then I should see error message.............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verify Login and Logout functionality" name="Verify login with Invalid credentials 2" time="5.887927">
+<system-out><![CDATA[Given I goto herokuapp login page...........................................passed
+When I enter username and ..................................................passed
+And I click on login button.................................................passed
+Then I should see error message.............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verify Login and Logout functionality" name="Verify login with Invalid credentials 3" time="5.548592">
+<system-out><![CDATA[Given I goto herokuapp login page...........................................passed
+When I enter user and pass..................................................passed
+And I click on login button.................................................passed
+Then I should see error message.............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verify Login and Logout functionality" name="Verify login with Invalid credentials 4" time="5.417433">
+<system-out><![CDATA[Given I goto herokuapp login page...........................................passed
+When I enter £@$^$& and pwdddd..............................................passed
+And I click on login button.................................................passed
+Then I should see error message.............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Verify Login and Logout functionality" name="Verify Logout" time="6.263525">
+<system-out><![CDATA[Given I goto herokuapp login page...........................................passed
+Given I am logged in........................................................passed
+When I click the logout button..............................................passed
+Then I should successfully logout...........................................passed
+]]></system-out>
+</testcase>
+</testsuite>
