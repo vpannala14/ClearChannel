@@ -24,3 +24,8 @@ o	Run feature by right clicking and running each file from  “clearChannelTest/
 
 Note: I have added tags for the scenarios. We can also run particular scenario with their corresponding tag (by changing the tag in CucumberRunner class)    
 
+
+Task 4: Creating a Sample Json  
+  
+>>I have added a sample Json file "houseTypes.json" to the project (clearChannelTest/houseTypes.json)  
+>> I have also created a sample test page "JsonSample.java" under Pages directory.
